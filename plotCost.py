@@ -8,10 +8,10 @@ ax = fig.gca(projection='3d')
 xvals = np.arange(-10,10,.5)
 yvals = np.arange(-1,4,.1)
 myxs, myys, myzs = [], [], []
-for david in xvals:
-    for kaleko in yvals:
-        myxs.append(david)
-        myys.append(kaleko)
+for i in xvals:
+    for j in yvals:
+        myxs.append(i)
+        myys.append(j)
         myzs.append(computeCost(np.array([[david], [kaleko]]),X,y))
 
 scat = ax.scatter(myxs,myys,myzs,c=np.abs(myzs),cmap=plt.get_cmap('YlOrRd'))
