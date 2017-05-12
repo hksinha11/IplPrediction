@@ -5,4 +5,4 @@ score of IPL(Indian Premier League) teams on the basis of historical features!
  
  
  For running the project run workflow.py with the correct destination of data file.
- Make sure you have installed matplotlib and numpy installed.
+ Make sure you have installed matplotlib and numpy.
