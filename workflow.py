@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy.linalg import inv
-datafile = 'cricdata1.txt'
+datafile = 'cricdata1.csv'
 cols = np.loadtxt(datafile,delimiter=',',usecols=(0,1),unpack=True) #Read in comma separated data
 #Form the usual "X" matrix and "y" vector
 X = np.transpose(np.array(cols[:-1]))
