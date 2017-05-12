@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-datafile = 'ex1data1.txt'
+datafile = 'cricdata1.csv'
 cols = np.loadtxt(datafile,delimiter=',',usecols=(0,1),unpack=True) #Read in comma separated data
 #Form the usual "X" matrix and "y" vector
 X = np.transpose(np.array(cols[:-1]))
@@ -11,6 +11,6 @@ X = np.insert(X,0,1,axis=1)
 plt.figure(figsize=(10,6))
 plt.plot(X[:,1],y[:,0],'rx',markersize=10)
 plt.grid(True) #Always plot.grid true!
-plt.ylabel('Profit in $10,000s')
-plt.xlabel('Population of City in 10,000s')
+plt.ylabel('Score after 20 overs')
+plt.xlabel('Score between 1 to 6 overs!')
 plt.show()
